@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Fira+Sans:wght@400;500&family=Lato&family=Montserrat&family=Poppins&family=Roboto&family=Syne+Mono&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  --bg-color1: #1d1f21;
+  --fg-color1: #c5c8c6;
+}
+
+body{
+  box-sizing: border-box;
+  background-color: var(--bg-color1);
+  color: var(--fg-color1);
+  font-family: 'Montserrat', sans-serif;;
+}
+a{
+  text-decoration: none;
+  color: var(--fg-color1);
+}
+.container{
+  width: 70%;
+  margin: auto;
+  padding-top: 3rem;
+}
+
+header{
+  position: fixed;
+  top: 2.5rem;
+  width: 70%;
+  background-color: var(--bg-color1);
+  z-index: 10;
+}
+nav{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 20px;
+}
+.pro-img{
+  width: 120px;
+  height: 120px;
+  background-image: url('../img/profile.jpg');
+  background-position: center top;
+  background-size: 110%;
+  background-repeat: no-repeat;
+  border-radius: 55%;
+  filter: grayscale(100%);
+}
+.pro-img:hover{
+  filter: grayscale(0%);
+  transition: 0.90s;
+}
+.pro-link{
+  text-align: right;
+}
+.pro-lines{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+}
+.line{
+  display: inline-block;
+  width: 45%;
+  height: 6px;
+}
+.l-1{
+  background-color: #19273d;
+}
+.l-2{
+  background-color: #a54242;
+}
+.l-3{
+  background-color: #1b5688;
+}
+main{
+  margin-top: 10rem;
+}
+main > div{
+  width: 85%;
+  margin: auto;
+}
+article{
+  margin: 1rem auto;
+  border-bottom: 0.2px solid var(--fg-color1);
+  font-size: 28px;
+}
+.accordion{
+  cursor: pointer;
+  width: 100%;
+  padding: 0.2rem 0.8rem;
+  text-align: left;
+  transition: 0.8s;
+  /* background-color: red; */
+}
+.accordion > span > i{
+  margin-right: 1rem;
+}
+.panel{
+  display: none;
+}
+.panel.active{
+  display: block;
+}
+.cnt{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.c-1{
+  margin: 2rem 0;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.cnt > hr{
+  border: 0.5px dashed var(--fg-color1);
+}
+
+footer{
+  width: 97%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  position: fixed;
+  bottom: 0;
+  background-color: var(--bg-color1);
+}
